@@ -1,7 +1,7 @@
 {
   "name": "@ash-framework/argument-error",
   "description": "Class for throwing descriptive user errors when bad arguments are passed to functions/classes",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "license": "MIT",
   "main": "./src/index.js",
   "repository": {
