@@ -9,7 +9,7 @@
 
 <span class="badge-badge"><a href="https://mediasuite.co.nz" title="The Media Suite"><img src="https://mediasuite.co.nz/ms-badge.png" alt="The Media Suite" /></a></span>
 <br class="badge-separator" />
-<span class="badge-badge"><a href="https://nodei.co/npm/argument-error"><img src="https://nodei.co/npm/argument-error.png?downloads=true&stars=true" /></a></span>
+<span class="badge-badge"><a href="https://nodei.co/npm/@ash-framework/argument-error"><img src="https://nodei.co/npm/@ash-framework/argument-error.png?downloads=true&stars=true" /></a></span>
 <br class="badge-separator" />
 <span class="badge-travisci"><a href="http://travis-ci.org/ash-framework/argument-error" title="Check this project's build status on TravisCI"><img src="https://img.shields.io/travis/ash-framework/argument-error/master.svg" alt="Travis CI Build Status" /></a></span>
 <span class="badge-npmversion"><a href="https://npmjs.org/package/@ash-framework/argument-error" title="View this project on NPM"><img src="https://img.shields.io/npm/v/@ash-framework/argument-error.svg" alt="NPM version" /></a></span>
@@ -39,7 +39,16 @@ Class for throwing descriptive user errors when bad arguments are passed to func
 
 
 ## Usage
-Usage instructions go here
+
+```js
+const context = 'User'
+const argumentName = 'name'
+const additionalMessage = 'expected a "String" but a "Number" was given'
+const error = new ArgumentError(context, argumentName, additionalMessage)
+
+error.message
+// 'Argument "name" given to "User" expected a "String" but a "Number" was given'
+```
 
 <!-- HISTORY/ -->
 
